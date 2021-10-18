@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Mybuttom">
+        <item name="android:layout_width">194dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:background">#705E78</item>
+    </style>
+</resources>

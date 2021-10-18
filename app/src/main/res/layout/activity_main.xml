@@ -14,25 +14,25 @@
         android:layout_marginTop="200dp"
         android:id="@+id/til1">
 
+
         <EditText
 
+            android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="39dp"
             android:ems="10"
             android:hint="UserName"
-            android:inputType="textPersonName"
-            />
-
-
+            android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/til1"
         app:layout_constraintStart_toStartOf="parent"
-        android:id="@+id/til2">
+        app:layout_constraintTop_toBottomOf="@id/til1">
+
 
         <EditText
 
@@ -40,20 +40,31 @@
             android:layout_height="39dp"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword"
-            />
-
-
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/button_second"
-        android:layout_width="194dp"
-        android:layout_height="52dp"
+        style="@style/Mybuttom"
         android:text="iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.536" />
+        app:layout_constraintVertical_bias="0.513" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="195dp"
+        android:layout_height="51dp"
+        android:background="@color/teal_700"
+        android:text="borrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
