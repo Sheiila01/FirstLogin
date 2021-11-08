@@ -3,7 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/gradient.xml" value="0.17407407407407408" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/ic_uno_background.xml" value="0.20989583333333334" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_main2.xml" value="0.1984375" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_splash_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.37864583333333335" />
+        <entry key="..\:/Sheila/AndroidStudioProjects/FirstLogin/app/src/main/res/mipmap-anydpi-v26/ic_uno.xml" value="0.20989583333333334" />
+        <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/gradient.xml" value="0.2140625" />
+        <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/gradlent.xml" value="0.21822916666666667" />
         <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21875" />
+        <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/drawable/ic_usuario_background.xml" value="0.2953125" />
         <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_main1.xml" value="0.3605072463768116" />
         <entry key="..\:/Users/am12dam2/AndroidStudioProjects/FirstLogin/app/src/main/res/layout/activity_main2.xml" value="0.3484375" />

@@ -4,6 +4,16 @@
     <style name="Mybuttom">
         <item name="android:layout_width">194dp</item>
         <item name="android:layout_height">52dp</item>
-        <item name="android:background">#705E78</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:backgroundTint"> @color/button_custom</item>
     </style>
+
+    <style name="button2" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">194dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="strokeColor">@color/opuesto</item>
+    </style>
+
+
 </resources>
