@@ -12,6 +12,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 
+/**
+ * He mejorado la animacion.
+ * **/
+
 public class SplashScreen extends AppCompatActivity {
     private final int T_SPLASH = 3000;
         @Override
