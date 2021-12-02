@@ -22,16 +22,28 @@ public class Signup extends AppCompatActivity {
         ImageView mMan = findViewById(R.id.hipman);
         Glide.with(this).load(R.drawable.hipman).into(mMan);
 
-        Button button_second = findViewById(R.id.button_second);
-        button_second.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), MainActivity.class);
-                startActivity(intent);
-
-            }
-        });
-
-
     }
+
+
+        public void onClick(View view) {
+            Intent intent = new Intent(view.getContext(), MainActivity.class);
+            startActivity(intent);
+
+        }
+
+//        // Method for Vaccinate button
+//        public void openMain(View v) {
+//            Intent intent = new Intent(Login.this, Main.class);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(intent);
+//        }
+
+//        Button button_second = findViewById(R.id.button_second);
+//        button_second.setOnClickListener(new View.OnClickListener() {
+//
+//        });
+
+
+
 }

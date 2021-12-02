@@ -8,6 +8,18 @@
 
     >
 
+    <ImageView
+        android:id="@+id/hipman"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.50"
+        android:scaleType="fitStart"
+        android:src="@drawable/hipman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="73dp">
+
+    </ImageView>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
@@ -57,13 +69,14 @@
         android:layout_width="179dp"
         android:layout_height="55dp"
         android:backgroundTint="@color/button_custom"
+        android:onClick="onClick"
         android:text="iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintVertical_bias="0.724" />
 
     <Button
         android:id="@+id/button_first"
@@ -73,21 +86,10 @@
         android:text="registrarse"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintHorizontal_bias="0.879"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
+        app:layout_constraintVertical_bias="0.722" />
 
-    <ImageView
-        android:id="@+id/hipman"
-        android:layout_width="418dp"
-        android:layout_height="727dp"
-        android:alpha="0.50"
-        android:scaleType="fitStart"
-        android:src="@drawable/hipman"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="7dp">
-
-    </ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

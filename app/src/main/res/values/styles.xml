@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Mybuttom">
-        <item name="android:layout_width">194dp</item>
-        <item name="android:layout_height">52dp</item>
+    <style name="Mybuttom" style="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:backgroundTint"> @color/button_custom</item>
     </style>
 
-    <style name="button2" parent="Widget.MaterialComponents.Button.OutlinedButton">
-        <item name="android:layout_width">194dp</item>
-        <item name="android:layout_height">52dp</item>
+    <style name="button2" style="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:textColor">@android:color/black</item>
-        <item name="strokeColor">@color/opuesto</item>
+        <item name="backgroundTint">@android:color/transparent</item>
     </style>
 
 

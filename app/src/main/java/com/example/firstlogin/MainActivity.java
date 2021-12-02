@@ -1,30 +1,117 @@
 package com.example.firstlogin;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.AdapterView;
-import android.widget.TextView;
+
 import android.widget.Toast;
 
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+
+
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    private SwipeRefreshLayout swipeLayout;
+    private WebView miVisorWeb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView mycontext = (TextView) findViewById(R.id.textTop);
-        registerForContextMenu(mycontext);
+//        WebView mycontext = (WebView) findViewById(R.id.textTap);
+
+        swipeLayout = (SwipeRefreshLayout) findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener(mOnRefreshListener);
+
+        //La vista dentro es un webview con permiso para zoom
+        miVisorWeb = (WebView) findViewById(R.id.vista);
+
+        miVisorWeb.getSettings().setBuiltInZoomControls(true);
+        miVisorWeb.loadUrl("https://thiscatdoesnotexist.com/");
+
+
     }
+
+    public void showAlertDialogButtonClicked(MainActivity activity_main) {
+
+        // setup the alert builder
+        MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
+
+//        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+        builder.setTitle("Achtung!");
+        builder.setMessage("Where do you go?");
+        builder.setIcon(R.drawable.candado);
+        builder.setCancelable(false);
+
+
+//        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+        // add the buttons
+        builder.setPositiveButton("Signup", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // do something like...
+                Intent intent = new Intent(MainActivity.this, Signup.class);
+                startActivity(intent);
+                dialog.dismiss();
+
+            }
+        });
+
+        builder.setNegativeButton("Do nothing", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        builder.setNeutralButton("Other", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+                // do something like...
+
+                dialog.dismiss();
+            }
+        });
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+
+    protected SwipeRefreshLayout.OnRefreshListener
+            mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+
+
+            Toast toast0 = Toast.makeText(MainActivity.this, "Imagen actualizada", Toast.LENGTH_LONG);
+            toast0.show();
+            miVisorWeb.reload();
+            swipeLayout.setRefreshing(false);
+        }
+    };
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v,
@@ -81,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id= item.getItemId();
+        int id = item.getItemId();
         if (id == R.id.item3) {
             Toast toast = Toast.makeText(this, "going APPBAR SETTINGS", Toast.LENGTH_LONG);
             toast.show();
@@ -99,8 +186,8 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
 
-            return super.onOptionsItemSelected(item);
-        }
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }

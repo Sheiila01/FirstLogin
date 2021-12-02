@@ -22,22 +22,16 @@
         <activity
             android:name=".LoginActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-
-        </activity>
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat"></activity>
         <activity
             android:name=".Signup"
             android:exported="true"
             android:parentActivityName=".LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.DayNight"></activity>
     </application>
 
 </manifest>
